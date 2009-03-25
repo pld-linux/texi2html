@@ -40,5 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/texi2html
 %{_mandir}/man1/texi2html*
 %{_datadir}/texi2html
+%dir %{_datadir}/texinfo
+%dir %{_datadir}/texinfo/html
 %doc %{_datadir}/texinfo/html/texi2html.html
 %doc %{_datadir}/info/texi2html*
