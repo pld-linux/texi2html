@@ -2,7 +2,7 @@ Summary:	texi2html is a Perl script that converts Texinfo files to HTML
 Summary(hu.UTF-8):	texi2html egy Perl szkript, amely Texinfo fájlokat konvertál HTML-be
 Name:		texi2html
 Version:	1.82
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Documentation
 Source0:	http://ftp.cc.uoc.gr/mirrors/nongnu.org/texi2html/%{name}-%{version}.tar.bz2
