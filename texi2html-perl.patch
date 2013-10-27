@@ -1,0 +1,10 @@
+--- texi2html-5.0/manage_i18n.pl.in.orig	2013-10-27 13:57:29.184773196 +0100
++++ texi2html-5.0/manage_i18n.pl.in	2013-10-27 14:24:04.201372927 +0100
+@@ -235,6 +235,7 @@
+          {
+               print TRANSLATIONS;
+          }
++         print TRANSLATIONS "1;";
+          close FILE;
+     }
+ }

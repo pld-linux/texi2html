@@ -1,0 +1,14 @@
+--- texi2html-5.0/doc/texi2html.texi.orig	2010-06-30 18:56:54.000000000 +0200
++++ texi2html-5.0/doc/texi2html.texi	2013-10-27 13:34:17.248164943 +0100
+@@ -131,9 +131,9 @@
+ @c I think the conversion script should be found
+ @c where the documentation system lives.
+ @c What do you think?
+-@dircategory Texinfo documentation system
++@dircategory Texinfo documentation system:
+ @direntry
+-* Texi2HTML: (texi2html).  Texinfo to HTML Converter.
++* Texi2HTML: (texi2html).		Texinfo to HTML Converter
+ @end direntry
+ @c --------------------------------------------------------
+ 
