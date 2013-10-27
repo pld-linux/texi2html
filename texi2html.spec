@@ -66,6 +66,7 @@ for d in $RPM_BUILD_ROOT%{_localedir}/*.us-ascii ; do
 	install -d $outd
 	%{__mv} $d/LC_MESSAGES/texi2html_document.mo $outd
 done
+%{__mv} $RPM_BUILD_ROOT%{_localedir}/{no,nb}
 %find_lang %{name} --all-name
 
 %clean
