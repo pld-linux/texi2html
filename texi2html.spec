@@ -15,7 +15,7 @@ Patch1:		%{name}-perl.patch
 URL:		http://www.nongnu.org/texi2html/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	gettext-devel >= 0.14
+BuildRequires:	gettext-tools >= 0.14
 BuildRequires:	perl-Encode
 BuildRequires:	perl-base
 BuildRequires:	rpm-perlprov
