@@ -5,7 +5,7 @@ Summary(hu.UTF-8):	texi2html egy Perl szkript, amely Texinfo fájlokat konvertá
 Summary(pl.UTF-8):	texi2html - skrypt Perla konwertujący pliki Texinfo do HTML-a
 Name:		texi2html
 Version:	5.0
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://download.savannah.gnu.org/releases/texi2html/%{name}-%{version}.tar.bz2
@@ -71,6 +71,12 @@ done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
+
+%postun	-p /sbin/postshell
+-/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
