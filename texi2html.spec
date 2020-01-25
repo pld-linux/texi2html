@@ -1,5 +1,4 @@
 # NOTE: 5.0 is likely to be the last separate texi2html release (as merged into texinfo)
-%include	/usr/lib/rpm/macros.perl
 Summary:	texi2html is a Perl script that converts Texinfo files to HTML
 Summary(hu.UTF-8):	texi2html egy Perl szkript, amely Texinfo fájlokat konvertál HTML-be
 Summary(pl.UTF-8):	texi2html - skrypt Perla konwertujący pliki Texinfo do HTML-a
