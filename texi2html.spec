@@ -4,13 +4,15 @@ Summary(hu.UTF-8):	texi2html egy Perl szkript, amely Texinfo fájlokat konvertá
 Summary(pl.UTF-8):	texi2html - skrypt Perla konwertujący pliki Texinfo do HTML-a
 Name:		texi2html
 Version:	5.0
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://download.savannah.gnu.org/releases/texi2html/%{name}-%{version}.tar.bz2
 # Source0-md5:	f15ac876fcdc8be865b16535f480aa54
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-perl.patch
+Patch2:		%{name}-Unicode-EastAsianWidth.patch
+Patch3:		%{name}-libintl.patch
 URL:		http://www.nongnu.org/texi2html/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -26,6 +28,10 @@ Suggests:	perl-Encode
 Suggests:	perl-Text-Unidecode
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# Package should be noarch but configure will fail with error:
+# Invalid configuration `noarch-pld-linux': machine `noarch-pld' not recognized
+%define		_debugsource_packages	0
+
 %description
 texi2html is a Perl script that converts Texinfo files to HTML.
 
@@ -39,6 +45,8 @@ texi2html to skrypt Perla konwertujący pliki Texinfo do HTML-a.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
 
 %build
 %{__gettextize}
