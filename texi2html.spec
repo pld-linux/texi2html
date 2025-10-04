@@ -52,7 +52,7 @@ texi2html to skrypt Perla konwertujący pliki Texinfo do HTML-a.
 %{__gettextize}
 cp -f po/Makefile.in.in po_document/
 cp -f po/Makefile.in.in po_messages/
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure \
