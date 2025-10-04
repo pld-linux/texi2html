@@ -20,6 +20,7 @@ BuildRequires:	gettext-tools >= 0.14
 BuildRequires:	perl-Encode
 BuildRequires:	perl-base
 BuildRequires:	rpm-perlprov
+BuildRequires:	rpmbuild(macros) >= 2.005
 BuildRequires:	texinfo
 Requires:	perl-Unicode-EastAsianWidth
 Requires:	perl-libintl
