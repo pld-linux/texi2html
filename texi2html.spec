@@ -30,7 +30,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # Package should be noarch but configure will fail with error:
 # Invalid configuration `noarch-pld-linux': machine `noarch-pld' not recognized
-%define		_debugsource_packages	0
+%undefine	_debugsource_packages
 
 %description
 texi2html is a Perl script that converts Texinfo files to HTML.
